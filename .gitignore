@@ -1,7 +1,43 @@
 node_modules
+package-lock.json
 dist
 .DS_Store
 .env
 
-# Ignore the output video from Git but not videos you import into src/.
+# Rendered video output
 out
+
+# AI coding tool configs
+.agent/
+.agents/
+.claude/
+.cline/
+.codebuddy/
+.codex/
+.commandcode/
+.continue/
+.crush/
+.cursor/
+.factory/
+.gemini/
+.goose/
+.junie/
+.kilocode/
+.kiro/
+.kode/
+.mcpjam/
+.mux/
+.neovate/
+.opencode/
+.openhands/
+.pi/
+.pochi/
+.qoder/
+.qwen/
+.roo/
+.trae/
+.windsurf/
+.zencoder/
+.github/
+skills/
+spotlight-animation/

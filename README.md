@@ -1,54 +1,62 @@
-# Remotion video
+# DREEM System Animation
 
-<p align="center">
-  <a href="https://github.com/remotion-dev/logo">
-    <picture>
-      <source media="(prefers-color-scheme: dark)" srcset="https://github.com/remotion-dev/logo/raw/main/animated-logo-banner-dark.apng">
-      <img alt="Animated Remotion Logo" src="https://github.com/remotion-dev/logo/raw/main/animated-logo-banner-light.gif">
-    </picture>
-  </a>
-</p>
+Animated system overview of [DREEM](https://github.com/talmolab/dreem) (Distinctly Recognizing Each Entity via Matching), built with [Remotion](https://remotion.dev).
 
-Welcome to your Remotion project!
+## Prerequisites
 
-## Commands
+- [Node.js](https://nodejs.org/) >= 18
+- npm
 
-**Install Dependencies**
+## Setup
 
-```console
-npm i
+```sh
+npm install
 ```
 
-**Start Preview**
+## Development
 
-```console
+Start the Remotion Studio preview:
+
+```sh
 npm run dev
 ```
 
-**Render video**
+This opens a browser-based editor where you can preview and scrub through the animation in real time.
 
-```console
+## Rendering
+
+Render the final video:
+
+```sh
 npx remotion render
 ```
 
-**Upgrade Remotion**
+Output will be written to the `out/` directory.
 
-```console
-npx remotion upgrade
+## Linting
+
+```sh
+npm run lint
 ```
 
-## Docs
+## Project Structure
 
-Get started with Remotion by reading the [fundamentals page](https://www.remotion.dev/docs/the-fundamentals).
-
-## Help
-
-We provide help on our [Discord server](https://discord.gg/6VzzNDwUwV).
-
-## Issues
-
-Found an issue with Remotion? [File an issue here](https://github.com/remotion-dev/remotion/issues/new).
+```
+src/
+  Root.tsx            # Remotion entry point, registers compositions
+  Composition.tsx     # Main composition wrapper
+  DreemOverview.tsx   # Top-level animation component
+  constants.ts        # Shared timing/config constants
+  components/         # Reusable animation components
+  scenes/             # Individual animation scenes
+    TitleScene.tsx
+    LogoScene.tsx
+    PipelineScene.tsx
+    AlgorithmScene.tsx
+    ResultsScene.tsx
+    OutroScene.tsx
+```
 
 ## License
 
-Note that for some entities a company license is needed. [Read the terms here](https://github.com/remotion-dev/remotion/blob/main/LICENSE.md).
+UNLICENSED
