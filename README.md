@@ -28,10 +28,8 @@ This opens a browser-based editor where you can preview and scrub through the an
 Render the final video:
 
 ```sh
-npx remotion render
+npx remotion render src/index.ts DreemOverview out/dreem-overview.mp4 --concurrency=100%
 ```
-
-Output will be written to the `out/` directory.
 
 ## Linting
 
