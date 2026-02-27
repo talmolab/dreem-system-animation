@@ -55,7 +55,7 @@ export const OUTRO_TILES = [
 export const DUR = {
   title:    3  * FPS,  //  90
   pipeline: 15 * FPS,  // 450
-  algo:     25 * FPS,  // 750
+  algo:     27 * FPS,  // 810
   results:  5  * FPS,  // 150
   outro:    9  * FPS,  // 270
   logo:     8  * FPS,  // 240

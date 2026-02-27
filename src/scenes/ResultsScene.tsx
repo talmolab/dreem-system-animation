@@ -143,7 +143,7 @@ export const ResultsScene: React.FC = () => {
             height: PANEL_H,
           }}
         >
-          <Loop durationInFrames={Math.floor(3.0 * FPS)}>
+          <Loop durationInFrames={Math.floor(5.0 * FPS)}>
             <OffthreadVideo
               src={staticFile(HERO.micro.annotated)}
               muted
